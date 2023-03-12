@@ -1,0 +1,248 @@
+/* © Copyright all rights reserved 2023.
+Made by myself ☺ */
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family:'montserrat';
+}
+
+.header {
+    background-color: #404146;
+    height: 90px;
+}
+
+.header-container {
+    width: 1250px;
+    margin: auto;
+}
+
+.header-logo a, .footer-logo a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 20px;
+    padding: 30.75px 24px;
+    float: left;
+}
+
+.header-list {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-list li {
+    padding: 35.5px 20px;
+}
+
+.header-list a {
+    float: left;
+    color:white;
+    text-decoration: none;
+}
+
+.header-list a li:hover {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    transition: all 0.125s linear;
+}
+
+.header-list ul {
+    margin-right: 60px;
+}
+
+.main-container {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.main-container p {
+    font-weight: 300;
+}
+
+.main-text {
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.main-text span {
+    color: #f1d00e;
+}
+
+.main p {
+    margin-top: 8px;
+    font-size: 35px;
+}
+
+.main-image img{
+    margin-top: 10px;
+    width: 220px;
+}
+
+.outer-about {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+.about {
+    margin: auto;
+    width: 1250px;
+}
+
+.about h1, .project-example h1, .contact h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 750;
+}
+
+.about p {
+    text-align: justify;
+    font-weight: 500;
+}
+
+.about p {
+    font-size: 15px;
+    padding: 0 240px;
+}
+
+.project-example {
+    padding: 100px 0;
+    padding-bottom: 200px;
+    height: 300px;
+}
+
+.project-example h1 {
+    padding-bottom: 10px;
+}
+
+.lessons {
+    margin: auto;
+    width: 1250px;
+    text-align: center;
+}
+
+.lesson {
+    float: left;
+    width: 33.333333333%;
+    margin: auto;
+}
+
+.lesson-icon img{
+    width: 300px;
+}
+
+.lesson p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+    display: inline-block;
+}
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-input input, textarea {
+    width: 750px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: #f4f4f4;
+    border-style: solid;
+    font-size: 15px;
+    font-family: 'montserrat';
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.contact-input textarea {
+    padding-top: 25px;
+    resize: vertical;
+}
+
+.contact button {
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border-style: none;
+    background-color: #f7e989;
+    width: 500px;
+    height: 50px;
+}
+
+.contact button:hover {
+    background-color: #fade1b;
+}
+
+.footer {
+    margin: auto;
+    background-color: #7c7d82;
+    height: 160px;
+}
+
+.footer-container {
+    width: 1250px;
+    margin: auto;
+}
+
+.footer-list ul {
+    float: right;
+    margin-top: 25px;
+    margin-right: 35px;
+}
+
+.footer-list li {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* animation */
+.lesson-icon img:hover {
+    transform: scale(105%);
+    transition: all 0.125s linear;
+}
+
+.contact button:active {
+    transform: scale(95%);
+    transition: all 0.05s linear;
+}
+
+.footer-list li:hover, .footer-logo a:hover {
+    transform: scale(95%);
+    transition: all 0.125s linear;
+}
+
+@keyframes zoom-in-out {
+    0% {transform: scale(1);}
+    50% {transform: scale(.925);}
+    100% {transform: scale(1);}
+}
+
+.main-image img {
+    -webkit-animation:zoom-in-out 2s; /* Safari dan Chrome */
+    -moz-animation:zoom-in-out 2s; /* Firefox */
+    -ms-animation:zoom-in-out 2s; /* Internet Explorer */
+    -o-animation:zoom-in-out 2s; /* Opera */
+    animation:zoom-in-out 2s; /* W3C */
+    animation-iteration-count: infinite;
+}
