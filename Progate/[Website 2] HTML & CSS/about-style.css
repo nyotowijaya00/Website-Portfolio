@@ -1,0 +1,14 @@
+.about {
+    background-color: rgba(34, 49, 52, 0.8);
+    padding: 75px 0;
+    text-align: center;
+}
+
+.about-content {
+    color: white;
+}
+
+.about-content {
+    margin: 0 50px;
+    font-weight: thin;
+}

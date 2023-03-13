@@ -1,0 +1,58 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body { 
+    font-family: "poppins";
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(34, 49, 52, 0.5);
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    float: left;
+    margin-top: 22px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo:hover {
+    transform: scale(105%);
+    transition: all 0.25s;
+}
+
+.header-menu {
+    float: right;
+}
+
+.header-menu a {
+    line-height: 65px;
+    color: white;
+    padding: 0 25px;
+    display: block;
+    float: left;
+}
+
+.header-menu a:hover {
+    color: rgba(34, 49, 52, 0.9);
+    padding: 0 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+}

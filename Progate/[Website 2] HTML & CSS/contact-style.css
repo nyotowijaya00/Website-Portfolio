@@ -1,0 +1,40 @@
+.contact {
+    background-color: whitesmoke;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.contact-input input, textarea {
+    width: 750px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: #f4f4f4;
+    border-style: solid;
+    font-size: 15px;
+    font-family: 'montserrat';
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.contact-input textarea {
+    padding-top: 25px;
+    resize: vertical;
+}
+
+.message button {
+    border-radius: 20px;
+    border-style: none;
+    background-color: #a6a6a6;
+    color: white;
+    width: 500px;
+    height: 50px;
+}
+
+.message button:hover {
+    background-color: #7c7c7c;
+    color: white;
+}
+
+.message {
+    text-align: center;
+}

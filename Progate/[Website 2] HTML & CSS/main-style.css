@@ -1,0 +1,71 @@
+.main {
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background-attachment: fixed;
+}
+
+.main-content {
+    margin: 0 50px;
+}
+
+.main-content h1 {
+    font-weight: bolder;
+    font-size: 100px;
+    color: white;
+}
+
+.main-content h2 {
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+    margin-top: -80px;
+}
+
+.main-content a {
+    color: white;
+    background-color: rgba(34, 49, 52, 0.5);
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.main-content a:hover {
+    background-color: rgba(34, 49, 52, 1);
+}
+
+
+
+
+
+.main-content-middle {
+    padding-top: 50px;
+    padding-bottom: 700px;
+}
+
+.main-lessons {
+    margin: 0 50px;
+}
+
+.main-lessons h1 {
+    color: black;
+    font-size: 50px;
+    border-bottom: 2px solid lightgray;
+}
+
+.lesson {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.lesson img:hover {
+    transform: scale(105%);
+    transition: all .25s;
+}
+
+.text-content {
+    text-align: justify;
+    margin: 0 15px;
+    padding-bottom: 50px;
+}
