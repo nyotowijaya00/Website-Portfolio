@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --primary: #14264b;
+    --celeste: #B9EFF0;
+    --vedigris: #7FB4B8;
+    --deltf-blue: #23395B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'montserrat';
+}
+
+.max-width {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*
+-------------------------------- 
+LANDING PAGE FRONT 
+*/
+.top-wrapper {
+    padding-top: 135.5px;
+    padding-bottom: 205.5px;
+    text-align: center;
+    color: white;
+}
+
+.top-wrapper h1 {
+    font-size: 100px;
+}
+
+.top-wrapper p {
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.top-wrapper a {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 18px;
+    border-radius: 50px;
+    padding: 12px 35px;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.top-wrapper a:hover {
+    background-color: white;
+    color: var(--primary);
+    padding: 12px 55px;
+}
+
+video {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    /* transform: rotateX(180deg);
+    -webkit-transform:rotateX(180deg); 
+    -moz-transform:rotateX(180deg);  */
+}
+
+
+
+
+/*
+-------------------------------- 
+NAVBAR 
+*/
+.navbar {
+    z-index: 1;
+    padding-top: 40px;
+}
+
+.navbar-logo {
+    float: right;
+}
+
+.navbar-menu img {
+    width: 60px;
+    float: right;
+    transition: all .275s;
+}
+
+.navbar-menu img:hover {
+    transform: scale(115%);
+    cursor: pointer;
+}
+
+.navbar-menu a {    
+    margin-right: 55px;
+    color: white;
+    text-decoration: none;
+    transition: all .275s;
+    border-radius: 40px;
+}
+
+.navbar-menu a:hover {    
+    background-color: #14264b;
+    border-radius: 40px;
+    padding: 10px 35px;
+}
+
+
+
+
+/*
+-------------------------------- 
+FLIP-CARDS 
+*/
+.cards-container {
+    background-image: linear-gradient(#f0f8ff, var(--celeste));
+    height: 609.5px;
+    font-family: 'Poppins';
+}
+
+.segment {
+    color: var(--primary);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    text-align: left;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 20px;
+    width: 25%;
+    height: 440px;
+    opacity: 0;
+    filter: blur(5px);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transform: translateX(-100%); 
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(110%);
+    cursor: default;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* adjust the background color and opacity according to your design */
+    color: #ffffff;
+    opacity: 0; /* hide the text by default */
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.card-description:hover {
+    opacity: 1;
+}
+
+.card-description h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.card-description p {
+    font-size: 15px;
+    padding-top: 5px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+
+/*
+-------------------------------- 
+CUSTOMER-SECTION
+*/
+.customer-container {
+    background-color: var(--celeste);
+    height: 609.5px;
+    font-family: 'Poppins';
+}
+
+.customer-container p {
+    color: var(--primary);
+}
+
+
+
+/*
+-------------------------------- 
+MAIL-SECTION
+*/
+.mail-container {
+    background-image: linear-gradient(var(--celeste), #f0f8ff);
+    height: 609.5px;
+    font-family: 'Poppins';
+}
+
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-input input, textarea {
+    width: 750px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: #f4f4f4;
+    border-style: solid;
+    font-size: 15px;
+    font-family: 'montserrat';
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.contact-input textarea {
+    padding-top: 25px;
+    resize: vertical;
+}
+
+.contact button {
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(--vedigris);
+    color: white;
+    width: 500px;
+    height: 50px;
+    transition: all .25s;
+}
+
+.contact button:hover {
+    background-color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin: auto;
+    height: 160px;
+    display: flex;
+    padding-top: 20px;
+    background-color: var(--deltf-blue);
+}
+
+.footer-logo{
+    float: left;
+    width: 50%;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-list ul {
+    float: right;
+}
+
+.footer-list li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.30s;
+}
+
+.footer-list li:hover {
+    transform: scale(110%);
+}
