@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 2% auto;
+}
+
+.content-input {
+    padding-top: 10px;
+    display: flex;
+}
+
+.content-input p, .content-input input{
+    margin-right: 10px;
+}
+
+#content-output {
+    margin: 10px 0;
+    border-top: 1px solid grey;
+}
+
+#content-output p {
+    margin: 10px 0;
+}
